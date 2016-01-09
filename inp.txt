@@ -1,0 +1,1 @@
+do not shut off the computers in the lab at any time these are unix computers and people are logged in remotely when you turn off the machine you cut them off if people need to access on the machines from another locations and the machines are shut off you force the users to come into the building to turn in back again

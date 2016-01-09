@@ -1,2 +1,6 @@
 # DecryptTextUsingMCMC
 This repository contains code to decrypt small english text messages using Markov Chain Monte Carlo algorithm. This problem of decrypting english text message is taken from one of the papers of Prof. Persi Diaconis. The link for the paper is http://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf. 
+
+Encrypted english text is a simple substitution cipher, where each character can be replaced by any other character. The substitution should be consistent. For example, If character x is replaced by character y then the character x should be replaced by character y at all its occurrences in english text. I have considered only lowercase characters from a to z and space. I have also provided a script “scramble.py” which reads the input english text from “ip.txt” file, encrypt it and write the encrypted text to “scrambled.txt” file.
+
+I have calculated the first order transitions:the proportion of consecutive text symbols from x to y. This gives a matrix M(x, y) of transitions. I have provided the War and Peace  novel text data in file “corpus.txt“ which is then parsed using file “parse.py” to remove punctuations and stop words. The parsed data is then written to file “parsed.txt”. The matrix M(x,y) is written to “M.txt” file. We then run the file “decrypt.py” to decrypt the   encrypted input english text.
